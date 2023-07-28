@@ -1,82 +1,97 @@
-*{
+* {
   font-family: "Lexend Deca", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #2B2B35;
+body {
+  background-color: #2b2b35;
+  padding: 0px 5%;
 }
-/* font styling */
-h1{
+
+/* ---------------- font styling -------------------------- */
+h1 {
   font-size: 72px;
   font-weight: 800;
   line-height: 90px;
   letter-spacing: -2%;
-  color: #2B2B35;
+  color: #2b2b35;
 }
-.left-cont > h3{
+.left-cont > h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 100px;
   letter-spacing: -2%;
-  color: #2B2B35;
+  color: #2b2b35;
 }
-.left-cont >  p{
+.left-cont > p {
   font-weight: 200;
   font-size: 18px;
   line-height: 30px;
-  color: #2B2B35;
+  color: #2b2b35;
 }
-.info  > .dark{
+.info > .dark {
   font-weight: 600;
   font-size: 14px;
   line-height: 30px;
-  color: #2B2B35;
+  color: #2b2b35;
 }
-.info  > .light{
+.info > .light {
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
-  color: #2B2B35;
+  color: #2b2b35;
 }
-.price{
+.price {
   font-weight: 400;
   font-size: 20px;
   margin-bottom: 10px;
-  color: #9497A8;
+  color: #9497a8;
 }
-/* container styling */
-.cont{
+
+/* ----------------------- container styling -------------------- */
+.cont {
   display: flex;
   justify-content: space-between;
   padding-top: 52px;
-  padding-bottom: 115px;
+  padding-bottom: 105px;
   background-color: #ffffff;
 }
-.left-cont{
+.left-cont {
   display: flex;
   width: 40%;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 80px;
-
+  margin-left: 90px;
 }
-.right-cont{
+.right-cont {
   width: 50%;
+  /* background-color: khaki; */
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
 }
-.top-right{
+.top-right {
   display: flex;
   flex-direction: column;
   position: absolute;
-  right: 80px;
+  right: 140px;
   align-items: end;
   height: 80px;
 }
-/* left container inner items styling */
-.left-cont > button{
+.space {
+  height: 200px;
+  width: 100%;
+}
+.image-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* -------------------left container inner items styling --------------- */
+.left-cont > button {
   color: white;
-  background-color: #D93A31;
+  background-color: #d93a31;
   font-size: 14px;
   line-height: 10px;
   align-items: center;
@@ -85,13 +100,72 @@ h1{
   border: none;
   margin-bottom: 10px;
 }
-.left-cont > button > img{
+.left-cont > button > img {
   margin-left: 20px;
 }
-/* outlet-product div and its inner item styling */
-.outlet-product{
-  width: 65%;
+
+/* ----------- outlet-product div and its inner item styling ------------- */
+.outlet-product {
+  width: 70%;
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+}
+.small-img {
+  position: relative;
+  top: 150px;
+}
+
+/* -------------- right container styling starts  -----------------*/
+.backpack {
+  width: 334px;
+  height: 334px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2b2b35;
+}
+.backpack > .top{
+  margin-bottom: 20px;
+}
+.backpack > .bottom > a {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 30px;
+  align-items: center;
+}
+.bg2 {
+  background-color: #53535B;
+  z-index: 1;
+  width: 169px;
+  height: 169px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg {
+  background-color: #404049;
+  width: 196px;
+  height: 196px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rotated-arrow{
+  transform: rotate(180deg);
+}
+.normal-arrow{
+  z-index: 1;
+}
+.slider-btn{
+  position: absolute;
+  padding: 13px;
+  background-color: #d93a31;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  right: 24px;
 }
