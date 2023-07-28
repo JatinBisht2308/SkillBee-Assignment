@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #2B2B35;
+}
 /* font styling */
 h1{
   font-size: 72px;
@@ -19,11 +22,37 @@ h1{
   letter-spacing: -2%;
   color: #2B2B35;
 }
+.left-cont >  p{
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2B2B35;
+}
+.info  > .dark{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  color: #2B2B35;
+}
+.info  > .light{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  color: #2B2B35;
+}
+.price{
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #9497A8;
+}
 /* container styling */
 .cont{
   display: flex;
   justify-content: space-between;
-  margin-top: 52px;
+  padding-top: 52px;
+  padding-bottom: 115px;
+  background-color: #ffffff;
 }
 .left-cont{
   display: flex;
@@ -35,8 +64,6 @@ h1{
 }
 .right-cont{
   width: 50%;
-  height: 100vh;
-  background-color: aqua;
 }
 .top-right{
   display: flex;
@@ -56,7 +83,15 @@ h1{
   font-weight: 500;
   padding: 20px 28px;
   border: none;
+  margin-bottom: 10px;
 }
 .left-cont > button > img{
   margin-left: 20px;
+}
+/* outlet-product div and its inner item styling */
+.outlet-product{
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
 }
