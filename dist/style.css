@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #2b2b35;
+  background-color: #000000;
   padding: 0px 5%;
 }
 
@@ -54,7 +54,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding-top: 52px;
-  padding-bottom: 105px;
   background-color: #ffffff;
 }
 .left-cont {
@@ -86,6 +85,7 @@ h1 {
 .image-cont {
   display: flex;
   justify-content: flex-end;
+  height: 667px;
 }
 
 /* -------------------left container inner items styling --------------- */
@@ -115,7 +115,6 @@ h1 {
   position: relative;
   top: 150px;
 }
-
 /* -------------- right container styling starts  -----------------*/
 .backpack {
   width: 334px;
@@ -169,3 +168,55 @@ h1 {
   border-radius: 50%;
   right: 24px;
 }
+.logo-cont{
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+  right: 50px;
+}
+.logo{
+  position: absolute;
+  bottom: 148px;
+  /* right: 5px; */
+}
+
+/* ----------------bottom container styling ------------------ */
+body > .bottom{
+  width: 100%;
+  background-color: #2b2b35;
+  height: 151px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 80px;
+  color: #ffffff
+}
+.acc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10.5rem;
+  margin-right: 10%;
+}
+.type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 9.5rem;
+}
+.bottom-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-right > small{
+  font-weight: 400;
+  font-size: 12px;
+  color: #B5B5C2;
+  line-height: 20px;
+}
+.bottom-right > h4{
+  font-weight: 600;
+  font-size: 22px;
+}
+
