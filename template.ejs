@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Dynamic Page - Create a cookbook with your favorite recipes
+  <title>Dynamic Page - <%= data.activity %>
   </title>
 </head>
 
@@ -14,15 +14,15 @@
   <div class="cont">
     <div class="top-right">
       <p class="price">PRICE</p>
-      <p>0.1</p>
+      <p><%= data.price %></p>
     </div>
 
     <div class="left-cont">
       <small class="key">
-        2237769
+        <%= data.key %>
       </small>
       <h1>
-        EXPLORE THE NIGHTLIFE OF YOUR CITY
+        <%= data.activity %>
       </h1>
       <h3>OUTDOOR & SPORTING GOODS COMPANY</h3>
       <button>EXPORE MORE <img src="../assets/btn-arrow.png" alt=""></button>
@@ -80,14 +80,14 @@
       <img src="../assets/card-send.webp" alt="">
       <div class="bottom-right">
         <small>ACCESSIBILITY</small>
-        <h4>0.32</h4>
+        <h4><%= data.accessibility %></h4>
       </div>
     </div>
     <div class="type">
       <img src="../assets/shield-tick.webp" alt="">
       <div class="bottom-right">
         <small>TYPE</small>
-        <h4>SOCIAL</h4>
+        <h4><%= data.type %></h4>
       </div>
     </div>
   </div>
