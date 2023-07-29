@@ -195,14 +195,15 @@ body > .bottom{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 10.5rem;
   margin-right: 10%;
 }
 .type{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 9.5rem;
+}
+.bottom img{
+  margin-right: 12px;
 }
 .bottom-right{
   display: flex;
@@ -215,8 +216,11 @@ body > .bottom{
   color: #B5B5C2;
   line-height: 20px;
 }
-.bottom-right > h4{
+.bottom-right > p{
   font-weight: 600;
   font-size: 22px;
+  text-transform:uppercase;
 }
 
+
+/* -------------- media queries for mobile ---------------- */
