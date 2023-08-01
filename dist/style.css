@@ -224,3 +224,60 @@ body > .bottom{
 
 
 /* -------------- media queries for mobile ---------------- */
+@media screen and (max-width: 500px) {
+  body{
+    padding: 0;
+  }
+  .cont{
+    flex-direction:column;
+    padding-top: 20px;
+  }
+  .left-cont{
+    width: 98%;
+    margin-left: 0;
+    padding: 0 5%;
+  }
+  /* ------------------- font styling --------------- */
+  h1{
+    width: 90%;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .left-cont > h3{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+
+  /*  removing position relative and absolute in right container */
+  .small-img{
+    position: static;
+  }
+  .space{
+    display: none;
+  }
+  .right-cont{
+    width: 80%;
+  }
+  .top-right{
+    right: 30px;
+  }
+  .price,.rate{
+    font-size: 12px;
+  }
+  .outlet-product{
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .info > .light{
+    font-size: 12px;
+  }
+  .info > .dark{
+    font-size: 12px;
+  }
+  .left-cont > p{
+    font-size: 14px;
+  }
+}
